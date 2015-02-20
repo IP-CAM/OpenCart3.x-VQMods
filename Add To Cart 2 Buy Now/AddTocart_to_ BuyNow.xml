@@ -1,0 +1,20 @@
+<modification>
+	<id>Buy Now </id>
+	<version>2.0.x</version>
+	<vqmver>2.0.</vqmver> 
+	<author>computerbar@gmail.com</author>
+	
+	<file name="catalog/language/english/default.php">
+		<operation error="log">
+			<search position="replace" >
+			<![CDATA[$_['button_cart']           = 'Add to Cart';]]></search> 
+			<add><![CDATA[$_['button_cart']           = 'Buy Now';]]></add>
+		</operation>
+				<operation error="log">
+			<search position="replace" >
+			<![CDATA[$_['button_shipping']       = 'Apply Shipping';]]></search> 
+			<add><![CDATA[$_['button_shipping']       = 'Apply Postage';]]></add>
+		</operation>
+				
+	</file>
+	</modification>
