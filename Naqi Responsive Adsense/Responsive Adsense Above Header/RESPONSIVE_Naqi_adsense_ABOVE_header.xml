@@ -1,13 +1,13 @@
 <!-- If you like this mod and would like to buy me coffee, I accept Paypal donation on computerbar@gmail.com //-->
 <!-- Created By Ray| Computerbar@gmail.com //-->
 <modification>
-<id><![CDATA[Add Add sense ABOVA Header]]></id>
+<id><![CDATA[Add Responsive Adsense ABOVE Header]]></id>
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.3.2]]></vqmver>
 <author><![CDATA[Ray | comuterbar@gmail.com]]></author>
-<file path="catalog/view/theme/*/template/common/" name="header.tpl">
-<operation info="Add horizentalAdsnese">
-<search position="before"><![CDATA[<body class="<?php echo $class; ?>">]]></search>
+<file path="catalog/view/theme/*/template/common/" name="home.twig">
+<operation info="Add Responsive Adsense ABOVE Header">
+<search position="before"><![CDATA[{{ header }}]]></search>
 <add><![CDATA[<center>
 <!-- REPLACE MY ADSENSE WITH YOURS- STARTS HERE //-->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
