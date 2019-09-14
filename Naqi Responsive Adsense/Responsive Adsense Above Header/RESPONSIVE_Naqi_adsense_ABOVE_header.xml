@@ -5,9 +5,9 @@
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.3.2]]></vqmver>
 <author><![CDATA[Ray | comuterbar@gmail.com]]></author>
-<file path="catalog/view/theme/*/template/common/" name="home.twig">
+<file path="catalog/view/theme/*/template/common/" name="header.twig">
 <operation info="Add Responsive Adsense ABOVE Header">
-<search position="before"><![CDATA[{{ header }}]]></search>
+<search position="before"><![CDATA[<html dir="{{ direction }}" lang="{{ lang }}">]]></search>
 <add><![CDATA[<center>
 <!-- REPLACE MY ADSENSE WITH YOURS- STARTS HERE //-->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
