@@ -1,0 +1,24 @@
+<!-- To says thanks please leave one mod UNCHANGED :) //-->
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<modification>
+<id><![CDATA[Add Auto Adsense to Opencart 3.x]]></id>
+<version><![CDATA[1]]></version>
+<vqmver><![CDATA[2.6.4]]></vqmver>
+<author><![CDATA[Ray | computerbar@gmail.com]]></author>
+<file path="catalog/view/theme/*/template/common/" name="header.twig">
+<operation info="Add Auto Adsense to Opencart 3.x">
+<search position="before"><![CDATA[</head>]]></search>
+<add><![CDATA[<center>
+<!-- REPLACE MY ADSENSE WITH YOURS- STARTS HERE //-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3050198832378845",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- REPLACE MY ADSENSE WITH YOURS- ENDS HERE //-->
+</center>]]></add>
+</operation>
+</file>
+</modification>
