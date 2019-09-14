@@ -4,8 +4,8 @@
 <id><![CDATA[Add Add sense ABOVA Header]]></id>
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.3.2]]></vqmver>
-<author><![CDATA[Ray | comuterbar@gmail.com]]></author>
-<file path="catalog/view/theme/*/template/common/" name="footer.tpl">
+<author><![CDATA[Ray | computerbar@gmail.com]]></author>
+<file path="catalog/view/theme/*/template/common/" name="footer.twig">
 <operation info="Add Responsive Adsnese">
 <search position="before"><![CDATA[<footer>]]></search>
 <add><![CDATA[<center>
