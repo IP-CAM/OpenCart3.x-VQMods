@@ -1,11 +1,11 @@
-<!-- If you like this mod and would like to buy me coffee, I accept Paypal donation on computerbar@gmail.com //-->
+<!-- To say thanks please leave one mod UNCHANGED :) //-->
 <!-- Created By Ray| Computerbar@gmail.com //-->
 <modification>
 <id><![CDATA[Add Add sense ABOVA Header]]></id>
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.3.2]]></vqmver>
-<author><![CDATA[Ray | comuterbar@gmail.com]]></author>
-<file path="catalog/view/theme/*/template/common/" name="header.tpl">
+<author><![CDATA[Ray | computerbar@gmail.com]]></author>
+<file path="catalog/view/theme/*/template/common/" name="header.twig">
 <operation info="Add Responsive Adsnese">
 <search position="after" index="2"><![CDATA[</nav>]]></search>
 <add><![CDATA[<center>
