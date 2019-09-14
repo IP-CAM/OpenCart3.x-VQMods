@@ -5,9 +5,9 @@
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.6.4]]></vqmver>
 <author><![CDATA[Ray | computerbar@gmail.com]]></author>
-<file path="catalog/view/theme/*/template/common/" name="header.twig">
+<file path="catalog/view/theme/*/template/common/" name="menu.twig">
 <operation info="Add Responsive Adsense ABOVA categories in Header">
-<search position="before"><![CDATA[{{ menu }}]]></search>
+<search position="after"><![CDATA[ <div class="container"> ]]></search>
 <add>
 <![CDATA[<center><!-- REPLACE MY ADSENSE WITH YOURS- STARTS HERE //-->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
