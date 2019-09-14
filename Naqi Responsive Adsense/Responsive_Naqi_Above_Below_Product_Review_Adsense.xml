@@ -1,0 +1,27 @@
+<!-- To says thanks please leave one mod UNCHANGED :) //-->
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<modification>
+	<id><![CDATA[Add Responsive Adsense Below Product Reviews]]></id>
+	<version><![CDATA[1]]></version>
+	<vqmver><![CDATA[2.3.2]]></vqmver>
+	<author><![CDATA[Ray | computerbar@gmail.com]]></author>
+	<file path="catalog/view/theme/*/template/product/" name="product.twig">
+		<operation info="Add Responsive Adsense Below Product Reviews">
+			<search position="before"><![CDATA[<!-- AddThis Button BEGIN -->]]></search>
+			<add><![CDATA[<center>
+			<!-- REPLACE MY ADSENSE WITH YOURS- STARTS HERE //-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Box -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3050198832378845"
+     data-ad-slot="9972745969"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- REPLACE MY ADSENSE WITH YOURS- ENDS HERE //-->
+</center>]]></add>
+		</operation>
+	</file>
+</modification>
