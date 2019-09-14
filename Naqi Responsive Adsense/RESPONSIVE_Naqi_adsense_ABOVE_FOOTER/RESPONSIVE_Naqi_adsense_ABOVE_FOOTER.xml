@@ -1,12 +1,12 @@
 <!-- To says thanks please leave one mod UNCHANGED :) //-->
 <!-- Created By Ray| Computerbar@gmail.com //-->
 <modification>
-<id><![CDATA[Add Add sense ABOVE Footer]]></id>
+<id><![CDATA[Add Adsense ABOVE Footer]]></id>
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.6.4]]></vqmver>
 <author><![CDATA[Ray | computerbar@gmail.com]]></author>
 <file path="catalog/view/theme/*/template/common/" name="footer.twig">
-<operation info="Add Responsive Adsnese">
+<operation info="Add Responsive Adsnese ABOVE Footer">
 <search position="before"><![CDATA[<footer>]]></search>
 <add><![CDATA[<center>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
