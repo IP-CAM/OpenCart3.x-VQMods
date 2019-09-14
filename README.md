@@ -1,2 +1,2 @@
-# OpenCart2.x-VQMods
-VQMods for Opencart 2.x.x
+# OpenCart3.x-VQMods
+VQMods for Opencart 3.x.x
