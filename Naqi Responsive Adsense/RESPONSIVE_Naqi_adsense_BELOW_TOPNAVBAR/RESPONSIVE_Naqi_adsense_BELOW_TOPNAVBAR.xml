@@ -6,8 +6,8 @@
 <vqmver><![CDATA[2.6.4]]></vqmver>
 <author><![CDATA[Ray | computerbar@gmail.com]]></author>
 <file path="catalog/view/theme/*/template/common/" name="header.twig">
-<operation info="Add Responsive Adsnese">
-<search position="after" index="2"><![CDATA[</nav>]]></search>
+<operation info="Add Responsive Adsnese below topnavbar">
+<search position="after"><![CDATA[</nav>]]></search>
 <add><![CDATA[<center>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Responsive Box -->
