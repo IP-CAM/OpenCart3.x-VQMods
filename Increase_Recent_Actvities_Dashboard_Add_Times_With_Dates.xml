@@ -1,0 +1,75 @@
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<modification>
+<id><![CDATA[Increase_Recent_Actvities_Dashboard Opencart 3.x]]></id>
+<version><![CDATA[1]]></version>
+<vqmver><![CDATA[2.6.4]]></vqmver>
+<author><![CDATA[Ray | computerbar@gmail.com]]></author>
+
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<file path="admin/model/extension/dashboard/" name="activity.php">
+<operation info="Increase_Recent_Actvities_Dashboard Opencart 3.x">
+<search position="replace"><![CDATA[$query = $this->db->query("SELECT `key`, `data`, `date_added` FROM `" . DB_PREFIX . "customer_activity` ORDER BY `date_added` DESC LIMIT 0,5");]]></search>
+<add><![CDATA[
+$query = $this->db->query("SELECT `key`, `data`, `date_added` FROM `" . DB_PREFIX . "customer_activity` ORDER BY `date_added` DESC LIMIT 0,15");
+]]></add>
+</operation>
+</file>
+
+
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<file path="admin/controller/extension/dashboard/" name="recent.php">
+<operation info="Increase_Latest_Orders_Dashboard Opencart 3.x">
+<search position="replace"><![CDATA['limit' => 5 ]]></search>
+<add><![CDATA['limit' => 15]]></add>
+</operation>
+
+
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<operation info="Add time with date dashboard Opencart 3.x">
+<search position="replace"><![CDATA[ 'date_added' => date($this->language->get('date_format_short'), strtotime($result['date_added'])), ]]></search>
+<add><![CDATA[ 'date_added' => $result['date_added'],]]></add>
+</operation>
+</file>
+
+
+<!-- Created By Ray| Computerbar@gmail.com //-->
+<file path="admin/controller/sale/" name="order.php">
+<operation info="Add time with date to order Opencart 3.x">
+        
+            <search position="replace"><![CDATA[$data['date_added'] = date($this->language->get('date_format_short'), strtotime($order_info['date_added']));]]></search>
+            <add><![CDATA[$data['date_added'] = $order_info['date_added'];]]></add>
+        </operation>
+		
+		
+ <!-- Created By Ray| Computerbar@gmail.com //-->       
+      <operation info="Add time with date to order Opencart 3.x">
+            <search position="replace"><![CDATA[date($this->language->get('date_format_short'), strtotime($order_info['date_added']))]]></search>
+            <add><![CDATA[$order_info['date_added']]]></add>
+        </operation>
+		
+		
+		<!-- Created By Ray| Computerbar@gmail.com //-->
+ <operation info="Add time with date to order Opencart 3.x">
+            <search position="replace"><![CDATA[date($this->language->get('date_format_short'), strtotime($result['date_added']))]]></search>
+            <add><![CDATA[$result['date_added']]]></add>
+        </operation>
+    </file>
+	
+	
+	<!-- Created By Ray| Computerbar@gmail.com //-->
+<file path="catalog/controller/account/" name="order.php">
+<operation info="Add time with date to order Opencart 3.x">
+            <search position="replace"><![CDATA[date($this->language->get('date_format_short'), strtotime($result['date_added']))]]></search>
+            <add><![CDATA[$result['date_added']]]></add>
+        </operation>
+		
+		
+		<!-- Created By Ray| Computerbar@gmail.com //-->
+  <operation info="Add time with date to order Opencart 3.x">
+            <search position="replace"><![CDATA[date($this->language->get('date_format_short'), strtotime($order_info['date_added']))]]></search>
+            <add><![CDATA[$order_info['date_added']]]></add>
+        </operation>
+</file>
+		
+		
+</modification>
