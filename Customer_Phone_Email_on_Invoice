@@ -4,14 +4,14 @@
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.6.4]]></vqmver>
 <author><![CDATA[Ray | computerbar@gmail.com]]></author>
-<file path="admin/view/theme/*/template/sale/" name="order_invoice.twig">
+<file path="admin/view/template/sale/" name="order_invoice.twig">
 <operation info="Add Customer_Phone_Email_on_Invoice Opencart 3.x">
 <search position="after"><![CDATA[{{ order.payment_address }}]]></search>
 <add><![CDATA[
 <br/>
-Phone number : {{ order.telephone }}
+<b>Telephone</b> : {{ order.telephone }}
 <br/>
-Email : {{ order.email }}
+<b>Email</b> : {{ order.email }}
 ]]></add>
 </operation>
 </file>
