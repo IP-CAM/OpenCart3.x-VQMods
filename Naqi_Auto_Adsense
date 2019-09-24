@@ -5,7 +5,7 @@
 <version><![CDATA[1]]></version>
 <vqmver><![CDATA[2.6.4]]></vqmver>
 <author><![CDATA[Ray | computerbar@gmail.com]]></author>
-<file path="catalog/view/theme/*/template/common/" name="header.twig">
+<file path="catalog/view/template/common/" name="header.twig">
 <operation info="Add Auto Adsense to Opencart 3.x">
 <search position="before"><![CDATA[</head>]]></search>
 <add><![CDATA[<center>
